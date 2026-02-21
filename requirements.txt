@@ -400,7 +400,7 @@ urllib3==2.3.0
     #   requests
 uvicorn[standard]==0.38.0
     # via chromadb
-uvloop==0.22.1
+# uvloop==0.22.1
     # via uvicorn
 virtualenv==20.34.0
     # via pre-commit

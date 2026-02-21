@@ -1,23 +1,23 @@
-import type { NextConfig } from "next"
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    // Environment variables
-    env: {
-        NEXT_PUBLIC_API_URL:
-            process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
-    },
+  // Environment variables
+  env: {
+    NEXT_PUBLIC_API_URL:
+      process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1",
+  },
 
-    // Image optimization
-    images: {
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "results.eci.gov.in",
-                pathname: "/**"
-            }
-        ]
-        // Vercel handles image optimization automatically
-    }
-}
+  // Image optimization
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "results.eci.gov.in",
+        pathname: "/**",
+      },
+    ],
+    // Vercel handles image optimization automatically
+  },
+};
 
-export default nextConfig
+export default nextConfig;
